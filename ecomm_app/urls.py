@@ -1,5 +1,7 @@
-# from django.urls import path
+from django.urls import path
+from . import views
 
-# urlpatterns = [
-#     path('', ),
-# ]
+app_name = 'ecomm_app'
+urlpatterns = [
+    path('', views.index),
+]
